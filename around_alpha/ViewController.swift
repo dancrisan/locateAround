@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func adminActionButton(sender: AnyObject) {
+        performSegueWithIdentifier("showBeacons", sender: self)
+    }
+    
+    @IBAction func listOfPeopleActionButton(sender: AnyObject) {
+        performSegueWithIdentifier("goToListOfPeople", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +27,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+//    @IBAction func adminButton(sender: AnyObject) {
+//        performSegueWithIdentifier("showListOfBeacons", sender: self)
+//    }
 
 }
 
